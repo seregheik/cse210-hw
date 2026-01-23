@@ -12,7 +12,7 @@ class Program
         job1._startYear = 2020;
         job1._endYear = 2030;
 
-        job2._jobTitle = "Product Manager";
+         job2._jobTitle = "Product Manager";
         job2._company = "Apple";
         job2._startYear = 2000;
         job2._endYear = 2040;
