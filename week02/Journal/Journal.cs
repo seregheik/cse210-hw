@@ -17,21 +17,21 @@ public class Journal
     public void SaveToFile(string file)
     {
        
-        using (StreamWriter outputFile = new StreamWriter(file))
+        using (StreamWriter outputFile = new StreamWriter($"{file}.txt"))
         {
              foreach (Entry entry in _entries)
                 {
-                    outputFile.WriteLine($"{entry._date},{entry._promptText},{entry._entryText} ");
+                    outputFile.WriteLine($"{entry._date}|{entry._promptText}|{entry._entryText} ");
                 }
             
         }
     }
     public void LoadFromFIle(string file)
     {
-        string[] lines = System.IO.File.ReadAllLines(file);
+        string[] lines = System.IO.File.ReadAllLines($"{file}.txt");
         foreach (string line in lines)
         {
-            string[] parts = line.Split(",");
+            string[] parts = line.Split("|");
             Entry newEntry = new Entry();
             newEntry._date = parts[0];
             newEntry._promptText = parts[1];
