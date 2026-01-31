@@ -1,7 +1,7 @@
 using System;
 using System.IO.Pipelines;
 
-// for exceeding the requirement, i made the program automatically track the last saved file by the user and prompt if the user wants to continue with the same file on subsequent running. If the user enters yes the program will automatically load the last saved file and if the user enters anything else, the program wont load the last saved file and will start afresh
+// for exceeding the requirement, i made the program automatically track the last saved file by the user and prompt. At launch of the program, it checks if the user has previously saved a journal file if the user wants to continue with the same file. If the user enters yes the program will automatically load the last saved file and if the user enters anything else, the program wont load the last saved file and will start afresh
 class Program
 {
     static void Main(string[] args)
