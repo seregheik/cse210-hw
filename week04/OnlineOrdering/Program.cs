@@ -10,7 +10,7 @@ class Program
         Product product2 = new Product("Mouse", "M456", 25, 2);
         order1.AddProduct(product1);
         order1.AddProduct(product2);
-        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine(" ");
         Console.WriteLine("Order 1 (USA Customer)");
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
@@ -24,11 +24,11 @@ class Program
         order2.AddProduct(product3);
         order2.AddProduct(product4);
         order2.AddProduct(product5);
-        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("");
         Console.WriteLine("Order 2 (International Customer)");
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine($"Total Cost: ${order2.CalculateTotalCost()}");
-        Console.WriteLine("------------------------------------------------");
+        Console.WriteLine("");
     }
 }
